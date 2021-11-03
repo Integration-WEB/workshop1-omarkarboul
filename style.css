@@ -162,6 +162,9 @@ ________________________
 
 .item1{
     background-color: rgb(255, 190, 225);
+    position: sticky;
+    top: 50px;
+    left: 100px;
 }
 
 .item2{
@@ -178,6 +181,12 @@ ________________________
     margin: 10px;
     width: 70%;
 }
+.box__percent {
+    width: 50%;
+    }
+    .box__pixels {
+    width: 200px;
+    }
 .box {
     border: 1px solid var(--grey-900);
     height: auto;
@@ -185,12 +194,30 @@ ________________________
     background-color: var(--primary-300);
 }
 
+
 .font__container {
     height: auto;
     margin: 10px;
     font-size: 25px;
+    }
+    .font__1em {
+    font-size: 1em;
+    }
+    .font__1rem {
+    font-size: 1rem;
+    }
+    .font__100percent {
+    font-size: 100%;
 }
-
+.font__2em {
+font-size: 2em;
+}
+.font__2rem {
+font-size: 2rem;
+}
+.font__200percent {
+font-size: 200%;
+}
 
 /*
 ________________________
@@ -215,19 +242,40 @@ ________________________
     background-color: var(--primary-100);
 }
 /* Extra small devices (phones, 600px and down) */
-
+@media screen and (max-width : 600px) {
+    .media__container{
+        background-color: var(--primary-100);
+    }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-
+@media screen and (min-width : 600px) {
+    .media__container{
+        background-color: var(--primary-200);
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 
-
+@media screen and (min-width : 768px) {
+    .media__container{
+        background-color: var(--primary-400);
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-
+@media screen and (min-width : 992px) {
+    .media__container{
+        background-color: var(--primary-600);
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width : 1200px) {
+    .media__container{
+        background-color: var(--primary-800);
+    }
+}
